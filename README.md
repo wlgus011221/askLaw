@@ -1,4 +1,4 @@
-# 법령 문서 질의응답 시스템
+![image](https://github.com/user-attachments/assets/446d3ff5-e92f-4fbd-95db-f5431102cc3c)# 법령 문서 질의응답 시스템
 
 AI 기반 법률 상담 서비스를 제공하는 웹 애플리케이션입니다. 전자정부프레임워크를 기반으로 한 프론트엔드와 커스터마이징된 LLM 모델을 활용한 법률 상담 시스템입니다.
 
@@ -29,7 +29,7 @@ AI 기반 법률 상담 서비스를 제공하는 웹 애플리케이션입니�
 ## 🛠️ 기술 스택
 
 ### 프론트엔드
-- **전자정부프레임워크 4.3.0**
+- **전자정부프레임워크 4.3.1**
 - **Spring MVC 5.3.37**
 - **JSP/JSTL**
 - **Bootstrap & Font Awesome**
@@ -113,7 +113,7 @@ docker compose version
 ### 1. 전자정부프레임워크 웹 애플리케이션
 
 #### 필요 조건
-- Java 17 이상
+- Java 17
 - Maven 3.6 이상
 - Tomcat 9.0 이상
 - **WSL 2** (Windows Subsystem for Linux)
@@ -137,6 +137,10 @@ mvn tomcat7:run
 
 #### Ollama 설치 및 모델 설정 (WSL 환경)
 ```bash
+# ollama 폴더 생성
+mkdir ollama
+cd ollama
+
 # WSL Ubuntu 환경에서 Ollama 설치
 curl -fsSL https://ollama.ai/install.sh | sh
 
